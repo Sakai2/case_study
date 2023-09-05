@@ -5,7 +5,7 @@ this readme is used to present my work and explain how to run the various algori
 
 ## questions.ipynb
 
-the questions.ipynb file contains all the answers to questions 1, 2 and 4. The first part is an analysis of the data, and then we explore the different avenues for answering the basic problem.
+the questions.ipynb file (which is in the src directory) contains all the answers to questions 1, 2 and 4. The first part is an analysis of the data, and then we explore the different avenues for answering the basic problem.
 
 ## create_match.py
 
@@ -22,7 +22,9 @@ Once the installation has been successfully completed, you can now launch the pr
 
 ### How to launch
 First, enter the src directory:
+
     cd src
+
 The easiest way to run the algorithm is to reproduce the following command: 
 
     python create_match.py
@@ -39,4 +41,5 @@ The results are saved as JSON files in the results folder.
 In the end, if you want to leave the env, this is the command to enter:
 
     deactivate
+
 
