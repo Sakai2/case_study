@@ -9,13 +9,13 @@ import argparse
 import os
 import shutil
 
-folder = "results"
+folder = "../results"
 if os.path.exists(folder):
     shutil.rmtree(folder)
 os.mkdir(folder)
 
-file_match1 = "data/match_1.json"
-file_match2 = "data/match_2.json"
+file_match1 = "../data/match_1.json"
+file_match2 = "../data/match_2.json"
 
 df_match1 = pd.read_json(file_match1)
 df_match2 = pd.read_json(file_match2)
@@ -120,7 +120,7 @@ def main(nbr_match, time):
         dict_mu_sigma = get_mu_sigma_dict(df_match1)
         dict_proba_next_action = get_proba_next_action(df_match1)
         result_json = get_match(dict_mu_sigma, dict_proba_next_action, time)
-        with open(f"results/match{count}.json", "w") as file:
+        with open(f"../results/match{count}.json", "w") as file:
             json.dump(result_json, file)
 
 if __name__ == "__main__":
@@ -133,4 +133,4 @@ if __name__ == "__main__":
     else:
         # Simple cross product
         time_in_hz = args.time * 30000 / 10
-        main(args.nbr_match, args.time)
+        main(args.nbr_match, time_in_hz)
