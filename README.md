@@ -21,6 +21,8 @@ Now that you're in the environment, you can download the dependencies with the f
 Once the installation has been successfully completed, you can now launch the program
 
 ### How to launch
+First, enter the src directory:
+    cd src
 The easiest way to run the algorithm is to reproduce the following command: 
 
     python create_match.py
